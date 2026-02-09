@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(235, 242, 250, 1);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+img{
+    height: 82px;
+    width: 82px;
+    vertical-align: middle;
+    margin-right: 8px
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Summary cards */
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.card1 {
+    flex: 1;
+    background:rgba(220, 252, 231, 1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card2 {
+    flex: 1;
+    background: rgb(130, 190, 210);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card3 {
+    flex: 1;
+    background:rgba(254, 226, 226, 1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.income { color: rgba(22, 163, 74, 1); }
+.expense { color: rgba(220, 38, 38, 1); }
+
+/* Form */
+.form {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.form input, .form select, .form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Layout */
+.main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.transactions, .chart-box {
+    background: rgb(244, 242, 242);
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.positive { color: green; }
+.negative { color: red; }
+
+button.delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+}

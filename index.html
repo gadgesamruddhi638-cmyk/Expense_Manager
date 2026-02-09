@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Expense Tracker</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<div class="container">
+    
+    <h1>
+        <img src="money bag.png" alt="money bag">Expense Manager</h1>
+
+    <!-- Summary -->
+    <div class="summary">
+        <div class="card1">
+            <h3>Balance</h3>
+            <p id="balance">₹0</p>
+        </div>
+        <div class="card2">
+            <h3>Income</h3>
+            <p class="income" id="income">₹0</p>
+        </div>
+        <div class="card3">
+            <h3>Expense</h3>
+            <p class="expense" id="expense">₹0</p>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+        <input type="text" id="desc" placeholder="Description" />
+        <input type="number" id="amount" placeholder="Amount" />
+        
+        <select id="category">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Bills">Bills</option>
+            <option value="Medical">Medical</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button onclick="addTransaction()">Add</button>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <!-- Transactions -->
+        <div class="transactions">
+            <h3>Transactions</h3>
+            <ul id="list"></ul>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-box">
+            <h3>Expense by Category</h3>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
